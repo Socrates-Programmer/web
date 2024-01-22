@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Esto es Index{% endblock %}
+
+
+{% block content %}
+
+<div class="hero">
+    <div class="hero-content">
+        <div class="left">
+            <h1 class="h1-left">Soy desarrollador</h1>
+            <h1 class="h1-left">Marcos Alexander Avila Tejada.</h1>
+            <p>Construyo aplicaciones en python dinamicas, utilizando bases de datos relacionales.</p>
+            <a href="#contacto" class="btn">Contactame</a>
+        </div>
+    
+        <div class="right">
+            <img src="{{ url_for('static', filename='bigdata3.png') }}" width='450px' alt="">
+        </div>
+    
+    </div>
+</div>
+{% include 'portfolio/section-first.html' %}
+{% include 'portfolio/section-second.html' %}
+{% include 'portfolio/section-third.html' %}
+{% endblock %}
